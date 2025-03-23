@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maram Mokhtar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    * {
+      font-family: "Playfair Display", serif;
+    }
+  </style>
+  <body>
+    <div class="relative bg-gradient-to-b from-black/10 to-black/60 h-screen">
+  <!-- Navigation Bar -->
+  <nav class="absolute top-0 left-0 w-full z-20 bg-transparent">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="./img-1.png" class="h-8" alt="GreenHaven Logo" style="height: 60px;" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">GreenHaven</span>
+      </a>
+      <div class="flex md:order-2">
+        <button type="button" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+          </svg>
+        </button>
+        <button type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+          <li><a href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">Home</a></li>
+          <li><a href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">About</a></li>
+          <li><a href="#" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">Services</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <div class="relative h-full">
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+      <source src="v1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 mix-blend-overlay"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
+      <h1 class="text-9xl font-bold animate-fade-in-up">Welcome to GreenHaven</h1>
+      <button type="button" class="mt-5 py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-[#E5D0AC] rounded-full border border-[#E5D0AC] hover:bg-gray-100 hover:text-gray-700 animate-pulse">
+        START YOUR PROJECT NOW
+      </button>
+    </div>
+  </div>
+</div>
+
+  
+
+    <!-- hero section -->
+    <div class="hero-section bg-[#131010]">
+      <div class="container p-4 sm:p-8 md:p-16 relative h-auto">
+        <div class="flex justify-center items-center text-center">
+          <h1
+            class="text-[#FFF0DC] text-lg sm:text-xl md:text-2xl animate-fade-in"
+          >
+            --- Providing Everything You Need ---
+          </h1>
+        </div>
+
+        <div
+          class="mb-4 px-4 py-5 grid grid-cols-1 md:grid-cols-2 text-[#FFF0DC] gap-6"
+        >
+          <div class="m-4 p-4 sm:m-6 sm:p-6">
+            <p
+              class="text-xl sm:text-2xl md:text-4xl font-semibold max-w-xl animate-slide-in-left"
+            >
+              WE HELP YOU TO GET
+              <span
+                class="text-yellow-400 font-extrabold text-xl sm:text-2xl md:text-4xl my-2 block"
+              >
+                THE BEST CREATIVE SOLUTIONS
+              </span>
+              FOR YOUR SPACE
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col space-y-4 mt-4 sm:mt-12 animate-slide-in-right"
+          >
+            <p class="text-sm sm:text-base">
+              Providing the best design solution for your space is our core
+              business. This space could be a house, an office building, or even
+              a coffee corner. We deeply believe that good design can make your
+              life and work better. Therefore, this became our mission.
+            </p>
+            <p class="text-sm sm:text-base">
+              Whether in a consultation session, a full design service, or even
+              a site visit, we'll always be thinking about the best solution for
+              a space that would make users' lives better.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery -->
+    <div class="gallery-section bg-[#131010]">
+      <div class="container p-4 h-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+          <figure
+            class="relative max-w-sm hover:scale-105 transition-transform duration-300"
+          >
+            <a href="#">
+              <img
+                class="rounded-lg h-[150px] sm:h-[200px] w-full object-cover"
+                src="https://images.pexels.com/photos/5825527/pexels-photo-5825527.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="image description"
+              />
+            </a>
+            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+              <p>Create with Love for Detail and Art in Design</p>
+            </figcaption>
+          </figure>
+
+          <!-- Image 2 -->
+          <div class="relative">
+            <img
+              class="h-[200px] sm:h-[300px] w-full rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+              src="https://images.pexels.com/photos/15743369/pexels-photo-15743369/free-photo-of-bright-cozy-bedroom.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+            <div class="absolute px-4 text-lg text-white bottom-6">
+              <p>Make Your Home a Place You Love</p>
+            </div>
+          </div>
+          <!-- Image 3 -->
+          <div class="relative">
+            <img
+              class="h-[150px] sm:h-[200px] w-full rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+              src="https://images.pexels.com/photos/3847520/pexels-photo-3847520.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+            <div class="absolute px-4 text-lg text-white bottom-6">
+              <p>Bring Inspiration into Every Corner or your Room</p>
+            </div>
+          </div>
+          <!-- Image 4 -->
+          <div class="relative">
+            <img
+              class="h-[200px] sm:h-[300px] w-full rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+              src="https://images.pexels.com/photos/3741314/pexels-photo-3741314.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+            <div class="absolute px-4 text-lg text-white bottom-6">
+              <p>Where Comforts Meets Style</p>
+            </div>
+          </div>
+          <img
+            class="h-[200px] sm:h-[300px] w-full rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+            src="https://cdn.sanity.io/images/hev1c88z/production/8c4184cd2b2ab4902aeaca031a800581454281d1-694x656.webp"
+            alt=""
+          />
+          <img
+            class="h-[150px] sm:h-[200px] w-full rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+            src="https://images.pexels.com/photos/189333/pexels-photo-189333.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+          <img
+            class="h-[200px] sm:h-[300px] w-full rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+            src="https://images.pexels.com/photos/20035980/pexels-photo-20035980/free-photo-of-sofa-with-large-tv-in-the-living-room-of-the-house.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+          <img
+            class="h-[150px] sm:h-[200px] w-full rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+            src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- features -->
+    <div class="features bg-[#131010] m-auto p-4 max-h-max">
+      <div
+        class="mb-4 px-4 sm:px-8 md:px-16 lg:px-36 py-5 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 lg:gap-24 text-[#FFF0DC]"
+      >
+       
+        <div class="flex flex-col space-y-4">
+          <p
+            class="font-semibold max-w-xl text-xl sm:text-2xl lg:text-3xl md:my-6 lg:my-12 animate-fade-in"
+          >
+            PRIOR TO DESIGN, WE SIT WITH YOU TO UNDERSTAND YOUR NEEDS DESIGN
+            PREFERENCES
+          </p>
+          <img
+            class="h-[250px] sm:h-[300px] lg:h-[350px] w-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+            src="https://images.pexels.com/photos/23496502/pexels-photo-23496502/free-photo-of-a-woman-and-two-men-sitting-on-a-couch-in-a-living-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="flex space-x-2">
+            <img
+              class="h-[250px] sm:h-[300px] lg:h-[350px] w-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+              src="https://images.pexels.com/photos/3965521/pexels-photo-3965521.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+        </div>
+
+      
+        <div class="flex flex-col mt-8 md:mt-0">
+          <h3
+            class="text-white font-semibold text-xl sm:text-2xl lg:text-3xl mb-6 sm:mb-8 lg:mb-12 md:my-6 lg:my-12"
+          >
+            Design Services
+          </h3>
+
+          <div class="space-y-4 sm:space-y-6">
+           
+            <a
+              href=""
+              class="block max-w-full sm:max-w-sm p-4 sm:p-6 bg-[#181C14] border border-[#1D1616] rounded-lg shadow-sm"
+            >
+              <h5
+                class="mb-2 text-lg sm:text-xl lg:text-2xl font-bold text-[#EEEE] animate-fade-in"
+              >
+                Architectural Design
+              </h5>
+              <ul
+                class="font-normal text-[#EEEE] text-xs sm:text-sm my-2 sm:my-4 list-disc space-y-1 sm:space-y-2 pl-5"
+              >
+                <li>3D Exterior renders</li>
+                <li>Floor Plans</li>
+                <li>Sections and Elevations</li>
+                <li>Landscape Design</li>
+              </ul>
+            </a>
+
+          
+            <a
+              href=""
+              class="block max-w-full sm:max-w-sm p-4 sm:p-6 bg-[#3C3D37] border border-[#1D1616] rounded-lg shadow-sm hover:scale-105 transition-transform duration-300"
+            >
+              <h5
+                class="mb-2 text-lg sm:text-xl lg:text-2xl font-bold text-[#ECDFCC]"
+              >
+                Interior Design
+              </h5>
+              <ul
+                class="font-normal text-[#ECDFCC] text-xs sm:text-sm my-2 sm:my-4 list-disc space-y-1 sm:space-y-2 pl-5"
+              >
+                <li>Mood boards</li>
+                <li>3D interior renders</li>
+                <li>Furniture Layouts</li>
+                <li>Ceiling and Lighting layout</li>
+                <li>Full detailed drawings</li>
+                <li>Bill of Quantities</li>
+              </ul>
+            </a>
+
+          
+            <a
+              href=""
+              class="block max-w-full sm:max-w-sm p-4 sm:p-6 bg-[#181C14] border border-[#1D1616] rounded-lg shadow-sm hover:scale-105 transition-transform duration-300"
+            >
+              <h5
+                class="mb-2 text-lg sm:text-xl lg:text-2xl font-bold text-[#EEEE]"
+              >
+                1 Hour Consultation Session
+              </h5>
+              <p class="font-normal text-[#EEEE] text-xs sm:text-sm lg:py-4">
+                If you're not sure about your space design feel free to book an
+                hour in office or online with us. During the session we provide
+                with sketches and solutions that fits your needs.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features bg-[#131010] m-auto p-4 max-h-max">
+      <div
+        class="mb-4 px-4 sm:px-8 md:px-36 py-5 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 text-[#FFF0DC]"
+      >
+       
+        <div class="flex flex-col space-y-4">
+          <p
+            class="font-semibold max-w-xl text-[#DDA853] text-2xl sm:text-3xl animate-fade-in"
+          >
+            CONTRACTING & FITOUT SERVICES
+          </p>
+
+         
+          <a
+            href="#"
+            class="block max-w-full sm:max-w-sm p-4 sm:p-6 pl-6 sm:pl-10 bg-[#201f1f] border border-[#201F1F] rounded-lg shadow-sm hover:scale-105 transition-transform duration-300"
+          >
+            <h5 class="mb-2 text-xl sm:text-2xl font-bold text-[#EEEE]">
+              Supervision Services
+            </h5>
+            <ul
+              class="font-normal text-[#EEEE] text-sm my-4 sm:my-6 list-disc space-y-2 pl-5"
+            >
+              <li>Site Visits</li>
+              <li>Material Selection</li>
+              <li>Design Coordination</li>
+            </ul>
+          </a>
+
+      
+          <a
+            href="#"
+            class="block max-w-full sm:max-w-sm p-4 sm:p-6 pl-6 sm:pl-10 bg-[#201f1f] border border-[#201F1F] rounded-lg shadow-sm hover:scale-105 transition-transform duration-300"
+          >
+            <h5 class="mb-2 text-xl sm:text-2xl font-bold text-[#EEEE]">
+              Furnishing Services
+            </h5>
+            <ul
+              class="font-normal text-[#EEEE] text-sm my-4 sm:my-6 list-disc space-y-2 pl-5"
+            >
+              <li>Furniture Layouts</li>
+              <li>Mood boards</li>
+              <li>Material Selection</li>
+              <li>Accessories Selection</li>
+            </ul>
+          </a>
+        </div>
+
+       
+        <div class="w-full h-[300px] sm:h-[400px] mt-4 sm:mt-12">
+          <video
+            class="w-full h-full object-cover rounded-md"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="./3773486-hd_1920_1080_30fps.mp4" type="video/mp4" />
+          </video>
+          <div class="block mt-4 sm:mt-6 text-center sm:text-left">
+            <button
+              type="button"
+              class="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-[#E5D0AC] rounded-full border border-[#E5D0AC] hover:bg-gray-100 animate-bounce hover:text-gray-700"
+            >
+              START YOUR PROJECT NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- special featured projects -->
+    <div class="Special-featured-proj bg-[#131010]">
+      <div class="container px-4 h-auto">
+        <div class="flex justify-center items-center text-center mb-18 pt-36">
+          <h1
+            class="text-[#FFF0DC] text-3xl sm:text-5xl md:text-7xl font-medium"
+          >
+            FEATURED PROJECTS
+          </h1>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-12 px-4 sm:px-32"
+        >
+        
+          <div class="rounded-lg overflow-hidden">
+            <img
+              class="w-full h-[300px] sm:h-[500px] object-cover rounded-t-lg hover:scale-105 transition-transform duration-300"
+              src="https://images.pexels.com/photos/5927436/pexels-photo-5927436.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="ALHARBI VILLA"
+            />
+            <div class="p-4 sm:p-6 text-[#FFF0DC] text-left">
+              <h2 class="text-xl sm:text-2xl font-semibold mb-2">
+                ALHARBI VILLA
+              </h2>
+              <p class="text-sm sm:text-md">Clean contemporary design</p>
+            </div>
+          </div>
+
+       
+          <div class="rounded-lg overflow-hidden">
+            <img
+              class="w-full h-[300px] sm:h-[500px] object-cover rounded-t-lg hover:scale-105 transition-transform duration-300"
+              src="https://images.pexels.com/photos/4846221/pexels-photo-4846221.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              alt="AL-SEEFVILLA"
+            />
+            <div class="p-4 sm:p-6 text-[#FFF0DC] text-left">
+              <h2 class="text-xl sm:text-2xl font-semibold mb-2">
+                AL-SEEF VILLA
+              </h2>
+              <p class="text-sm sm:text-md">Elegant neoclassical villa</p>
+            </div>
+          </div>
+
+        
+          <div class="rounded-lg overflow-hidden">
+            <img
+              class="w-full h-[300px] sm:h-[500px] object-cover rounded-t-lg hover:scale-105 transition-transform duration-300"
+              src="https://images.pexels.com/photos/17616615/pexels-photo-17616615/free-photo-of-interior-of-a-contemporary-apartment-with-view-of-skyscrapers.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              alt="AL-TURBAG STUDIO APARTMENT"
+            />
+            <div class="p-4 sm:p-6 text-[#FFF0DC] text-left">
+              <h2 class="text-xl sm:text-2xl font-semibold mb-2">
+                AL-TURBAG STUDIO APARTMENT
+              </h2>
+              <p class="text-sm sm:text-md">
+                Contemporary design of studio apartment
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div class="Explore-projects bg-[#131010]">
+      <div class="container px-4 py-10">
+       
+        <div
+          class="relative h-[300px] sm:h-[500px] md:h-[600px] w-full bg-[url('https://images.pexels.com/photos/6957083/pexels-photo-6957083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-no-repeat bg-cover bg-center"
+        >
+         
+          <div class="absolute inset-0 bg-black/80"></div>
+
+      
+          <div
+            class="relative flex flex-col items-center justify-center h-full text-center px-4 md:px-6"
+          >
+            <h1
+              class="text-white uppercase text-2xl sm:text-4xl md:text-6xl font-semibold max-w-3xl leading-tight"
+            >
+              EXPLORE PROJECTS <span>WE ARE PROUD OF</span>
+            </h1>
+
+          
+            <div class="mt-6">
+              <button
+                type="button"
+                class="py-2.5 px-6 text-sm font-medium text-gray-900 bg-[#E5D0AC] rounded-full border border-[#E5D0AC] hover:text-gray-700 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              >
+                PORTFOLIO
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+      <!-- Grid for Testimonial Cards -->
+    <div class="h-auto bg-[#131010] py-12">
+      <div class="container mx-auto px-4">
+      
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 sm:gap-8 py-4"
+        >
+          <!-- Testimonial Card 1 -->
+          <div
+            class="bg-[#E5D0AC] rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <!-- Top Image -->
+            <div class="flex justify-center -mt-16">
+              <img
+                class="w-32 h-32 object-cover rounded-full border-4 border-white"
+                src="https://dlifeinteriors.com/wp-content/uploads/2022/08/prannoi.jpg"
+                alt="User Image"
+              />
+            </div>
+            <!-- Bottom Content -->
+            <div class="px-6 py-4">
+              <div class="text-center">
+                <h2 class="text-xl font-semibold text-gray-800">Prannoy HS</h2>
+                <p class="text-sm text-gray-600">Source:Facebook</p>
+              </div>
+              <p class="mt-4 text-gray-700 text-center">
+                "Working with DLIFE was such a wonderful experience. From my
+                initial inquiry to the final reveal, they made the entire design
+                project process so easy. The interior designer they teamed me up
+                with could not have been more perfect. Thank you so much for
+                helping me create such a beautiful home"
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div
+            class="bg-[#E5D0AC] rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <!-- Top Image -->
+            <div class="flex justify-center -mt-16">
+              <img
+                class="w-32 h-32 object-cover rounded-full border-4 border-white"
+                src="https://dlifeinteriors.com/wp-content/uploads/2022/06/satish.jpeg"
+                alt="User Image"
+              />
+            </div>
+            <!-- Bottom Content -->
+            <div class="px-6 py-4">
+              <div class="text-center">
+                <h2 class="text-xl font-semibold text-gray-800">
+                  Mr. Satish Rajan & Family
+                </h2>
+                <p class="text-sm text-gray-600">Source:Facebook</p>
+              </div>
+              <p class="mt-4 text-gray-700 text-center">
+                "Very professional interior designers. The team was very prompt
+                and passionate in understand our needs and delivering on their
+                promise. Choosing DLIFE was the best decision we took, when
+                building our house."
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div
+            class="bg-[#E5D0AC] rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <!-- Top Image -->
+            <div class="flex justify-center -mt-16">
+              <img
+                class="w-32 h-32 object-cover rounded-full border-4 border-white"
+                src="https://dlifeinteriors.com/wp-content/uploads/2022/06/rao.jpeg"
+                alt="User Image"
+              />
+            </div>
+            <!-- Bottom Content -->
+            <div class="px-6 py-4">
+              <div class="text-center">
+                <h2 class="text-xl font-semibold text-gray-800">Rao Family</h2>
+                <p class="text-sm text-gray-600">Source:Facebook</p>
+              </div>
+              <p class="mt-4 text-gray-700 text-center">
+                "Dear DLIFE team, we are well pleased with your work that made
+                our old home a beautiful contemporary one. Everyone saw the
+                house got amazed the way you changed an old house to current
+                manner and it was above our expectation."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer bg-[#131010] text-white">
+      <div class="mx-auto w-full max-w-screen-xl px-4 py-10">
+      
+        <div
+          class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-14 text-center sm:text-left"
+        >
+          <!-- Left Column: Contact Info -->
+          <div>
+            <h1 class="text-lg sm:text-xl font-semibold mb-4">GET IN TOUCH</h1>
+            <p class="text-sm sm:text-base">Tel: 0487 1234567</p>
+            <p class="text-sm sm:text-base">Email: info@antakah.com</p>
+          </div>
+
+          <!-- Center Column: Social Media -->
+          <div
+            class="flex justify-center space-x-6 sm:space-x-8 text-xl sm:text-2xl"
+          >
+            <a href="#" class="hover:text-gray-400"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="hover:text-gray-400"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-gray-400"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+
+          <!-- Right Column: Address -->
+          <div class="sm:ml-16">
+            <h1 class="text-lg sm:text-xl font-semibold mb-4">OUR LOCATION</h1>
+            <ul class="space-y-1 text-sm sm:text-base">
+              <li>6919 Price Turki St,</li>
+              <li>Cornish Park,</li>
+              <li>Efficiency Center,</li>
+              <li>Khobar</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="mt-8 text-center text-gray-500 text-sm">
+          © 2025 <a href="#" class="hover:underline">by Sandra Design</a>. All
+          Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
